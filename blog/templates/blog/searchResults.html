@@ -1,0 +1,18 @@
+{% extends 'blog/base.html'%}
+
+{% block head %}
+<title>Results</title>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+    {% for post in search_results %}
+    <a href="{% url 'blog-detail' post.id %}" href=""> {{ post.title }}</a>
+        <br>
+        <br>
+
+{% endfor %}
+    <a  href="{% url 'blog-list' %}" class="btn btn-light mt-3  mb-3"> Back </a>
+    </div>
+{% endblock %}

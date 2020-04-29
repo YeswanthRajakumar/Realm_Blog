@@ -1,0 +1,54 @@
+{% extends 'users/user_base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block head %}
+    <title> Register</title>
+{% endblock %}
+
+{% block content %}
+
+
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card login-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="{% static 'images/login.jpg' %}" alt="login" class="login-card-img">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <div class="brand-wrapper">
+                <img src="{% static 'images/realm_icon.svg' %}" alt="logo" class="logo">
+              </div>
+              <p class="login-card-description">Create New  account</p>
+              <form action="" method="POST">
+                  {% csrf_token %}
+                  <div class="form-group">
+    {{ form | crispy }}
+
+                </div>
+
+                  <input name="signup" id="signup" class="btn btn-block login-btn mb-4" type="submit" value="Signup">
+                </form>
+
+
+
+                <p class="login-card-footer-text">Already have an account? <a href="{% url 'user-login' %}" class="text-reset">Login here</a></p>
+                <nav class="login-card-footer-nav">
+
+                </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+{% endblock %}
+
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block head %}
+  <title>Home</title>
+{% endblock %}
+
+
+{% block content %}
+
+     <div class="banner" >
+    <div class="container">
+      <h1 class="font-weight-semibold"> Know&nbsp&&nbspShare what you are better at...</h1>
+      <h6 class="font-weight-normal text-muted pb-3"> I'am looking for a great headline here you can suggest something  </h6>
+      <div>
+        <a  href="{% url 'blog-list' %}" class="btn btn-opacity-success ml-1 font-weight-bold"> Get started </a>
+      </div>
+      <img  class ='mt-3' src="{% static 'images/Group1.png'%}" alt="" class="img-fluid">
+    </div>
+  </div>
+  <div class="content-wrapper">
+
+      <div class="container">
+
+        <section class="features-overview" id="features-section" >
+        <div class="content-header">
+          <h2>How does it works</h2>
+          <h6 class="section-subtitle text-muted">One theme that serves as an easy-to-use operational toolkit<br>that meets customer's needs.</h6>
+        </div>
+
+          <div class="d-md-flex justify-content-between">
+          <div class="grid-margin d-flex justify-content-start">
+            <div class="features-width">
+              <img src="{% static 'images/Group12.svg'%}" alt="" class="img-icons">
+              <h5 class="py-3">Connect to <br>Groups</h5>
+              <p class="text-muted">
+              Get connect to people with the similar interest and share knowledge with each other.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-margin d-flex justify-content-center">
+            <div class="features-width">
+              <img src="{% static 'images/Group7.svg'%}" alt="" class="img-icons">
+              <h5 class="py-3">Chat with <br>Users<b>(Beta)</b></h5>
+              <p class="text-muted">
+                   A Text-based communication that is live or in real-time.
+                  For example, when talking to someone in chat any typed
+                  text is received by other participants immediately.
+              </p>
+            </div>
+
+          </div>
+          <div class="grid-margin d-flex justify-content-end">
+            <div class="features-width">
+              <img src="{% static 'images/Group5.svg'%}" alt="" class="img-icons">
+              <h5 class="py-3">Recommendation<br>System <b>(Beta)</b></h5>
+              <p class="text-muted">
+             It is a subclass of information filtering system
+                  that seeks to predict the preferred contents for  a user
+                  based on their accessed item history.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="case-studies" id="case-studies-section">
+        <div class="row grid-margin">
+          <div class="col-12 text-center pb-5">
+            <h2>Our Blog Categories</h2>
+            <h6 class="section-subtitle text-muted">Select what you're into.We'll help you find greatest things to read</h6>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-primary text-center card-contents">
+                  <div class="card-image">
+                    <img src="{% static 'images/Group95.svg'%}" class="case-studies-card-img" alt="">
+                  </div>
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Online marketing</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Competitive Programming</h6>
+                    <p>Problem Solving, DataStructures</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-warning text-center card-contents">
+                  <div class="card-image">
+                      <img src="{% static 'images/Group108.svg'%}" class="case-studies-card-img" alt="">
+                  </div>
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Web Development</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Web Development</h6>
+                    <p>Full-Stack Development</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-violet text-center card-contents">
+                  <div class="card-image">
+                      <img src="{% static 'images/Group126.svg'%}" class="case-studies-card-img" alt="">
+                  </div>
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Web Designing</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Web Designing</h6>
+                    <p>Designing, Developing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 stretch-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="card color-cards">
+              <div class="card-body p-0">
+                <div class="bg-success text-center card-contents">
+                  <div class="card-image">
+                      <img src="{% static 'images/Group115.svg'%}" class="case-studies-card-img" alt="">
+                  </div>
+                  <div class="card-desc-box d-flex align-items-center justify-content-around">
+                    <div>
+                      <h6 class="text-white pb-2 px-3">Know more about Software Development</h6>
+                      <button class="btn btn-white">Read More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-details text-center pt-4">
+                    <h6 class="m-0 pb-1">Software Development</h6>
+                    <p>Android, IOS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us" id="contact-section">
+        <div class="contact-us-bgimage grid-margin" >
+          <div class="pb-4">
+            <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">Do you Suggest any blog categories ?</h4>
+            <h4 class="pt-1" data-aos="fade-down"> let us know </h4>
+          </div>
+          <div data-aos="fade-up">
+            <button class="btn btn-rounded btn-outline-danger" data-toggle="modal" data-target="#exampleModal">Contact us</button>
+          </div>
+        </div>
+      </section>
+      <section class="contact-details" id="contact-details-section">
+        <div class="row text-center text-md-left">
+          <div class="col-12 col-md-6 col-lg-3 grid-margin">
+            <img src="{% static 'images/realm_icon.svg'%}" style="height: 100px;width: 120px" alt="" class="pb-2">
+            <div class="pt-2">
+              <p class="text-muted m-0">realm@gmail.com</p>
+              <p class="text-muted m-0">9080212607</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 grid-margin">
+            <h5 class="pb-2">Get in Touch</h5>
+            <p class="text-muted">Don’t miss any updates of our new updates and contents.!</p>
+            <form>
+              <input type="text" class="form-control" id="Email" placeholder="Email id">
+            </form>
+            <div class="pt-3">
+              <button class="btn btn-dark">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 grid-margin">
+            <h5 class="pb-2">Our Guidelines</h5>
+            <a href="#"><p class="m-0 pb-2">Terms</p></a>
+            <a href="#" ><p class="m-0 pt-1 pb-2">Privacy policy</p></a>
+            <a href="#"><p class="m-0 pt-1 pb-2">Cookie Policy</p></a>
+            <a href="#"><p class="m-0 pt-1">Discover</p></a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 grid-margin">
+              <h5 class="pb-2">Our address</h5>
+              <p class="text-muted"> FORGE.FACTORY, G Floor, KCT Tech Park,<br>
+                  #3 Athipalayam Road, Chinnavedampatti,<br>
+                  Coimbatore, Tamil Nadu 641049.
+              <div class="d-flex justify-content-center justify-content-md-start">
+                <a href="#"><span class="mdi mdi-facebook"></span></a>
+                <a href="#"><span class="mdi mdi-twitter"></span></a>
+                <a href="#"><span class="mdi mdi-instagram"></span></a>
+                <a href="#"><span class="mdi mdi-linkedin"></span></a>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Modal for Contact - us Button -->
+
+
+  </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'users/user_base.html' %}
+{% load static %}
+{% block head %}
+    <title> logout </title>
+{% endblock %}
+
+{% block content %}
+    <p> Thank you </p>
+    <a href="{% url 'user-login' %}"> Login again </a>
+{% endblock %}

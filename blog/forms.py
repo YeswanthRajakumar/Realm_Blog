@@ -6,11 +6,10 @@ from django.forms.widgets import CheckboxSelectMultiple
 class PostForm(ModelForm):
     class Meta:
         model = Post
-        fields = ('category', 'title', 'content', 'thumbnail')
+        fields = ['category', 'title', 'content', 'thumbnail']
 
     def __init__(self, *args, **kwargs):
         super(PostForm, self).__init__(*args, **kwargs)
-
         self.fields["category"].widget = CheckboxSelectMultiple()
         self.fields["category"].queryset = Category.objects.all()
 

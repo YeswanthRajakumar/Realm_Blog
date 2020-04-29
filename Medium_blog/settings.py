@@ -63,16 +63,32 @@ WSGI_APPLICATION = 'Medium_blog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'REALM_DB',
+#         'USER': 'Yeswanth',
+#         'PASSWORD': 'YESWANTH9095',
+#         'HOST': 'database-3.cohzzxpgsbsr.ap-northeast-1.rds.amazonaws.com',
+#         'PORT': '5432'
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'REALM_DB',
-        'USER': 'Yeswanth',
-        'PASSWORD': 'YESWANTH9095',
-        'HOST': 'database-3.cohzzxpgsbsr.ap-northeast-1.rds.amazonaws.com',
-        'PORT': '5432'
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'POST': '5432'
+
     }
 }
+
+
+
 
 
 # Password validation

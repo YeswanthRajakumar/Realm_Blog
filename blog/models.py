@@ -15,7 +15,7 @@ class Category(models.Model):
 class Author(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True,)
     email = models.EmailField(null=True, blank=True)
-    profile_pic = models.ImageField(null=True, default='default.jpg')
+    profile_pic = models.ImageField(null=True, default='default.png')
     contact = models.CharField(max_length=10, null=True, blank=True)
     bio = models.TextField(null=True, blank=True)
     website_link = models.URLField(blank=True, null=True)

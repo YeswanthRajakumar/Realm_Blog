@@ -145,3 +145,7 @@ def DeletePost(request, post_id):
     post = get_object_or_404(Post, id=post_id)
     post.delete()
     return redirect('blog-list')
+
+
+def ContactView(request):
+    return render(request,template_name='blog/contact.html')

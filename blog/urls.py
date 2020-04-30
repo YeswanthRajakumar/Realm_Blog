@@ -10,5 +10,6 @@ urlpatterns = [
     path('update/<int:post_id>', blog_views.UpdatePost, name='update-post'),
     path('delete/<int:post_id>', blog_views.DeletePost, name='delete-post'),
     path('blogdetail/<int:id>', blog_views.blogDetailView, name='blog-detail'),
+    path('contact/', blog_views.ContactView, name='contact'),
 
 ]

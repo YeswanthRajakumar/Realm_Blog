@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
     'ckeditor',
     'crispy_forms',
     'blog',
@@ -87,10 +88,6 @@ DATABASES = {
     }
 }
 
-
-
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -142,6 +139,14 @@ EMAIL_HOST_USER = 'yeswanthjayanthi@gmail.com'
 EMAIL_HOST_PASSWORD = 'YESWANTH9095'
 EMAIL_USE_TLS = True
 
+# add 'storages' to installed apps after installing django-storages and BOTO3
 
+# S3 BUCKETS CONFIG
 
-
+AWS_ACCESS_KEY_ID = 'AKIAQPQL5RBO7KGWYYFT'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'realm-blog-bucket'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

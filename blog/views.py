@@ -148,4 +148,14 @@ def DeletePost(request, post_id):
 
 
 def ContactView(request):
-    return render(request,template_name='blog/contact.html')
+    if request.method == 'POST':
+
+        sender_email = request.POST.get['Email']
+        message_body = request.POST.get['Body']
+        print(sender_email)
+        print(message_body)
+        send_mail(subject='User contact from Realm', message=message_body,
+                  from_email='yeswanthjayanthi@gmail.com',
+                  recipient_list=[sender_email], fail_silently=False)
+
+    return render(request, template_name='blog/contact.html')

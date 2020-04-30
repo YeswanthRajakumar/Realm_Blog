@@ -16,15 +16,15 @@
                   {% csrf_token %}
                       <div class="form-group">
                           <label for="Name">Name</label>
-                          <input type="text" class="form-control" id="Name" placeholder="Name">
+                          <input type="text" class="form-control" id="Name" placeholder="Name" name="Name">
                         </div>
                         <div class="form-group">
                           <label for="Email">Email</label>
-                          <input type="email" class="form-control" id="Email-1" placeholder="Email">
+                          <input type="email" class="form-control" id="Email-1" placeholder="Email" name="Email">
                         </div>
                         <div class="form-group">
                           <label for="Message">Message</label>
-                          <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
+                          <textarea class="form-control" id="Message" placeholder="Enter your Message" name="Body"></textarea>
                         </div>
                           <div class="formbutns mb-4">
                       <button type="submit" class="btn btn-success">Send</button>
